@@ -56,11 +56,19 @@ This paragraph has a quote
 from the text my post.
 
 ### 统计一个字符串中字符出现的次数
-###### 获得次数最多的一个，共出现几次
+###### 获得次数最多的一个，共出现几次???
 `<script>  
- var str = "HelloWorld";  
+ var str = "HelloWorld";   
+ 
  var dect = [];   //用字典的方式定义空的对象  
+ 
  for(var i=0; i<str.length; i++){  
-   if(dect[str[i]] === un
+ 
+   if(dect[str[i]] === undefined){
+   
+     dict[str[i]] = 1;
+   }else{
+     dict[str[i]] += 1;
+   }
  }
 </script>`  
