@@ -67,8 +67,11 @@ from the text my post.
    if(dect[str[i]] === undefined){
    
      dict[str[i]] = 1;
+     
    }else{
+   
      dict[str[i]] += 1;
+     
    }
  }
 </script>`  
