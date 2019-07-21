@@ -63,18 +63,35 @@ from the text my post.
  
     var dect = [];   //用字典的方式定义空的对象  
  
-    for(var i=0; i<str.length; i++){  
+    for(var i=0; i<str.length; i++){   //遍历字符串中每个字符
  
-      if(dect[str[i]] === undefined){
+      if(dect[str[i]] === undefined){     //如果dict对象中不包含当前字母为属性名的成员
    
-         dict[str[i]] = 1;
+         dict[str[i]] = 1;                //将强行添加一个当前字母为属性名  初始化为1
      
        }else{
    
-         dict[str[i]] += 1;
+         dict[str[i]] += 1;             //否则就是出现过该字母  在属性值的基础之上 +1
      
        }
       
      }
-     
+     console.log(dect);
+     //利用奥运会跳水比赛记分牌的方式  最大值都会覆盖前面小的值  
+     var max, count = 0;  
+     for(var key in dict){  
+       if(dict[key] > count){  
+         max = key;
+         count = dect[key];
+       }
+     }
+     console.log(dict);
+     var max, count = 0;
+     for(var key in dict){  
+       if(dict[key] > count){  
+         max = key;
+         count = dict[key];
+       }
+     }
+     console.log(max, count);
  </script>`  
