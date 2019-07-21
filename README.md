@@ -31,12 +31,10 @@
    <header>    
    <h1>{{title}}</h1>
    </header>
-GFM 使用三个回勾号
-```
+GFM 使用三个回勾号  
 <header>
     <h1>{{title}}</h1>
 </header>
-´´´
   
 ## 链接
 
@@ -56,3 +54,8 @@ This paragraph has a quote
  
 > That is pulled out like this
 from the text my post.
+
+### 统计一个字符串中字符出现的
+`
+
+`
