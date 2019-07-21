@@ -78,20 +78,12 @@ from the text my post.
      }
      console.log(dect);
      //利用奥运会跳水比赛记分牌的方式  最大值都会覆盖前面小的值  
-     var max, count = 0;  
-     for(var key in dict){  
-       if(dict[key] > count){  
+     var max, count = 0;              //初始化值
+     for(var key in dict){            // 遍历对象dict中每个属性
+       if(dict[key] > count){        //属性的属性值 大于 count 的话 
          max = key;
          count = dect[key];
        }
      }
-     console.log(dict);
-     var max, count = 0;
-     for(var key in dict){  
-       if(dict[key] > count){  
-         max = key;
-         count = dict[key];
-       }
-     }
-     console.log(max, count);
+     console.log(dict);  
  </script>`  
