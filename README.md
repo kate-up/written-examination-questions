@@ -55,7 +55,7 @@ This paragraph has a quote
 > That is pulled out like this
 from the text my post.
 
-### 统计一个字符串中字符出现的次数
+## 统计一个字符串中字符出现的次数
 ###### 获得次数最多的一个，共出现几次???
 `   <script>  
 
@@ -87,3 +87,17 @@ from the text my post.
      }
      console.log(max, count);  
  </script>`  
+
+## 数组去重？？？
+`<script>
+    var arr = ['a','b','c','d','a','b'];  
+    var dict = {};                           //先定义一个空的对象（字典）
+    for(var i = 0; i < arr.length; i++){  
+        dict[arr[i]] = 0;                //遍历arr数组 将遍历到的属性值放在dict对象中  已经遍历过的会将前面的覆盖
+    }
+    console.log(dict);  
+    var result = [];          //将结果存放在数组中  
+    var i = 0;
+    for( result[i++] in dict);
+    console.log(result);
+</script>`
