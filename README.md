@@ -32,14 +32,13 @@
    <header>    
    <h1>{{title}}</h1>
    </header>
-GFM 使用三个回勾号```  
-
-´´´
+GFM 使用三个回勾号
+```
 <header>
     <h1>{{title}}</h1>
 </header>
 ´´´
-例子  
+  
 ## 链接
 
 This is a paragraph that contains a [link to example]()  
