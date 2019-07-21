@@ -55,7 +55,11 @@ This paragraph has a quote
 > That is pulled out like this
 from the text my post.
 
-### 统计一个字符串中字符出现的
+### 统计一个字符串中字符出现的次数
+###### 获得次数最多的一个，共出现几次
 `
-
+<script>
+ var str = "HelloWorld";
+ var dect = [];   //用字典的方式定义空的对象
+</script>
 `
