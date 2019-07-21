@@ -61,11 +61,11 @@ from the text my post.
 
     var str = "HelloWorld";   
  
-    var dect = [];   //用字典的方式定义空的对象  
+    var dict = [];   //用字典的方式定义空的对象  
  
     for(var i=0; i<str.length; i++){   //遍历字符串中每个字符
  
-      if(dect[str[i]] === undefined){     //如果dict对象中不包含当前字母为属性名的成员
+      if(dict[str[i]] === undefined){     //如果dict对象中不包含当前字母为属性名的成员
    
          dict[str[i]] = 1;                //将强行添加一个当前字母为属性名  初始化为1
      
@@ -76,14 +76,14 @@ from the text my post.
        }
       
      }
-     console.log(dect);
+     console.log(dict);
      //利用奥运会跳水比赛记分牌的方式  最大值都会覆盖前面小的值  
      var max, count = 0;              //初始化值
      for(var key in dict){            // 遍历对象dict中每个属性
        if(dict[key] > count){        //属性的属性值 大于 count 的话 
          max = key;
-         count = dect[key];
+         count = dict[key];
        }
      }
-     console.log(dict);  
+     console.log(max, count);  
  </script>`  
