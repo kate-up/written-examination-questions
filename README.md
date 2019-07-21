@@ -90,14 +90,25 @@ from the text my post.
 
 ## 数组去重？？？
 `<script>
-    var arr = ['a','b','c','d','a','b'];  
+
+    var arr = ['a','b','c','d','a','b']; 
+    
     var dict = {};                           //先定义一个空的对象（字典）
+    
     for(var i = 0; i < arr.length; i++){  
+    
         dict[arr[i]] = 0;                //遍历arr数组 将遍历到的属性值放在dict对象中  已经遍历过的会将前面的覆盖
+        
     }
+    
     console.log(dict);  
+    
     var result = [];          //将结果存放在数组中  
+    
     var i = 0;
+    
     for( result[i++] in dict);
+    
     console.log(result);
+    
 </script>`
