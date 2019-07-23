@@ -112,3 +112,39 @@ from the text my post.
     console.log(result);
     
 </script>`
+
+## 深拷贝
+`
+  <script>
+     var lilei = {
+        sname:"Li Lei",
+        age:12,
+        score:null,
+        address:{
+            city:"北京",
+            area:"海淀",
+            street:"万寿路"
+        },
+        friends:["jack","rose","lucy"]
+     }
+     
+     function clone(obj){
+         if(obj === null){         //null
+             return null
+         }
+         if( {}.toString.call(obj) === "[Object Array]" ){    //数组
+            var newArr = [];
+            newArr = obj.slice();
+            return newArr;
+         }
+         var newObj = {};
+         for( var key in obj ){
+             if( typeof obj[key] !== object ){        //原始类型
+                 newObj[key] = obj[key];
+             }else{
+                 newObj[key] = clone( obj[key] )       //对象
+             }
+         }
+     }
+  </script>
+`
