@@ -114,15 +114,13 @@ from the text my post.
 </script>`
 
 ## 深拷贝
-`  
-
-  <script>    
+`<script>    
   
-     var lilei = {   
+      var lilei = {   
      
-        sname:"Li Lei",  
+         sname:"Li Lei",  
         
-        age:12,  
+         age:12,  
         
         score:null,  
         
@@ -176,6 +174,4 @@ from the text my post.
          
      }  
      
-  </script>  
-  
-`
+  </script>`
