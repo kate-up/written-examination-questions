@@ -175,3 +175,8 @@ from the text my post.
      }  
      
   </script>`
+
+## null和undefined的区别
+`undefined是访问一个未被初始化的变量返回的值  
+
+null是访问一个上不存在的对象时返回的值`
