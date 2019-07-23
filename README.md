@@ -114,66 +114,68 @@ from the text my post.
 </script>`
 
 ## 深拷贝
-`
-  <script>
+`  
+
+  <script>    
   
-     var lilei = {
+     var lilei = {   
      
-        sname:"Li Lei",
+        sname:"Li Lei",  
         
-        age:12,
+        age:12,  
         
-        score:null,
+        score:null,  
         
-        address:{
+        address:{  
         
-            city:"北京",
+            city:"北京",  
             
-            area:"海淀",
+            area:"海淀",  
             
-            street:"万寿路"
+            street:"万寿路"  
             
-        },
+        },  
         
-        friends:["jack","rose","lucy"]
+        friends:["jack","rose","lucy"]  
         
-     }
+     }  
      
-     function clone(obj){
+     function clone(obj){  
      
-         if(obj === null){         //null
+         if(obj === null){         //null  
          
-             return null
+             return null  
              
-         }
+         }  
          
-         if( {}.toString.call(obj) === "[Object Array]" ){    //数组
+         if( {}.toString.call(obj) === "[Object Array]" ){    //数组  
          
-            var newArr = [];
+            var newArr = [];  
             
-            newArr = obj.slice();
+            newArr = obj.slice();  
             
-            return newArr;
+            return newArr;  
             
-         }
+         }  
          
-         var newObj = {};
+         var newObj = {};  
          
-         for( var key in obj ){
+         for( var key in obj ){  
          
-             if( typeof obj[key] !== object ){        //原始类型
+             if( typeof obj[key] !== object ){        //原始类型  
              
-                 newObj[key] = obj[key];
+                 newObj[key] = obj[key];  
                  
-             }else{
+             }else{  
              
-                 newObj[key] = clone( obj[key] )       //对象
+                 newObj[key] = clone( obj[key] )       //对象  
                  
-             }
-             
-         }
+             }  
+              
+         }  
          
-     }
+     }  
      
-  </script>
+  </script>  
+  
 `
